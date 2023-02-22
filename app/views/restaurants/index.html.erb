@@ -1,0 +1,10 @@
+<div class="container mt-5">
+  <% @restaurants.each do |restaurant| %>
+  <div class="container mt-3">
+    <li><%= restaurant.name %></li>
+    <li><%= restaurant.category %></li>
+    <li><%= restaurant.address %></li>
+    <p><%= link_to "View Restaurant", restaurant_path(restaurant) %> </p>
+    <% end %>
+  </div>
+</div>
